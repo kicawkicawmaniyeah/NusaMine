@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #07290c;
+  --color-primary-container: #1e3f20;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #86ab83;
+  --color-secondary: #5c613f;
+  --color-secondary-container: #e1e6bb;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #626745;
+  --color-tertiary: #341d07;
+  --color-tertiary-container: #4c321a;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #bf9a7a;
+  --color-background: #fff8f6;
+  --color-on-background: #271810;
+  --color-surface: #fff8f6;
+  --color-surface-dim: #f1d4c7;
+  --color-surface-bright: #fff8f6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fff1eb;
+  --color-surface-container: #ffeae0;
+  --color-surface-container-high: #ffe2d6;
+  --color-surface-container-highest: #fadccf;
+  --color-surface-variant: #fadccf;
+  --color-on-surface: #271810;
+  --color-on-surface-variant: #424840;
+  --color-outline: #737970;
+  --color-outline-variant: #c2c8be;
+  --color-surface-tint: #446744;
+  --color-inverse-surface: #3e2c24;
+  --color-inverse-on-surface: #ffede6;
+  --color-inverse-primary: #aad1a6;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #c5edc1;
+  --color-primary-fixed-dim: #aad1a6;
+  --color-on-primary-fixed: #012106;
+  --color-on-primary-fixed-variant: #2d4e2e;
+  --color-secondary-fixed: #e1e6bb;
+  --color-secondary-fixed-dim: #c5caa1;
+  --color-on-secondary-fixed: #191e04;
+  --color-on-secondary-fixed-variant: #45492a;
+  --color-tertiary-fixed: #ffdcc0;
+  --color-tertiary-fixed-dim: #e8bf9d;
+  --color-on-tertiary-fixed: #2c1603;
+  --color-on-tertiary-fixed-variant: #5d4127;
+  --color-bg-canvas: #F4F1EA;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-surface-subtle: #EDE1D2;
+  --color-border-subtle: #E2E8F0;
+  --color-border-warm: #DDD3C4;
+  --color-accent-butter: #CBB89D;
+  --color-accent-palmoil: #5D2510;
+  --color-status-review: #D97706;
+  --color-status-review-bg: #FEF3C7;
+  --color-status-anomaly: #DC2626;
+  --color-status-anomaly-bg: #FEE2E2;
+  --color-status-verified: #1E3F20;
+  --color-status-verified-bg: #E8EFE9;
+  --color-status-neutral: #64748B;
+  --color-status-neutral-bg: #F1F5F9;
+
+  --spacing-gutter: 1rem;
+  --spacing-gutter-desktop: 1.5rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+  --spacing-space-2xl: 3rem;
+  --spacing-margin: 1.5rem;
+  --spacing-margin-desktop: 2rem;
+
+  --font-body-md: 'Inter', sans-serif;
+  --font-display-md: 'Inter', sans-serif;
+  --font-display-lg: 'Inter', sans-serif;
+  --font-headline-lg: 'Inter', sans-serif;
+  --font-headline-sm: 'Inter', sans-serif;
+  --font-body-lg: 'Inter', sans-serif;
+  --font-body-sm: 'Inter', sans-serif;
+  --font-label-md: 'Inter', sans-serif;
+  --font-label-xs: 'Inter', sans-serif;
+  --font-tabular-kpi: 'JetBrains Mono', monospace;
+  --font-tabular-data: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+.font-tabular-kpi, .font-tabular-data {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+.text-display-lg {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+
+.text-display-md {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+}
+
+.text-headline-lg {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.text-headline-sm {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-body-lg {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-body-md {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-body-sm {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.text-label-md {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.text-label-xs {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+}
+
+.text-tabular-kpi {
+  font-size: 26px;
+  line-height: 32px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.text-tabular-data {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}

@@ -1,0 +1,603 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "on-secondary-fixed": "#191e04", "on-tertiary-fixed-variant": "#5d4127", "background": "#fff8f6", "secondary-container": "#e1e6bb", "status-review-bg": "#FEF3C7", "outline": "#737970", "error-container": "#ffdad6", "on-primary": "#ffffff", "tertiary-fixed": "#ffdcc0", "on-primary-fixed": "#012106", "status-verified-bg": "#E8EFE9", "surface-variant": "#fadccf", "bg-canvas": "#F4F1EA", "secondary-fixed": "#e1e6bb", "inverse-surface": "#3e2c24", "status-neutral-bg": "#F1F5F9", "surface-bright": "#fff8f6", "primary-fixed-dim": "#aad1a6", "tertiary": "#341d07", "accent-butter": "#CBB89D", "surface": "#fff8f6", "on-tertiary": "#ffffff", "on-primary-container": "#86ab83", "tertiary-fixed-dim": "#e8bf9d", "inverse-on-surface": "#ffede6", "on-error-container": "#93000a", "outline-variant": "#c2c8be", "status-review": "#D97706", "surface-tint": "#446744", "on-secondary-fixed-variant": "#45492a", "status-neutral": "#64748B", "surface-container-lowest": "#ffffff", "secondary": "#5c613f", "status-verified": "#1E3F20", "primary": "#07290c", "primary-container": "#1e3f20", "error": "#ba1a1a", "on-surface": "#271810", "accent-palmoil": "#5D2510", "on-tertiary-fixed": "#2c1603", "on-primary-fixed-variant": "#2d4e2e", "bg-surface": "#FFFFFF", "on-tertiary-container": "#bf9a7a", "on-background": "#271810", "on-surface-variant": "#424840", "surface-container-high": "#ffe2d6", "bg-surface-subtle": "#EDE1D2", "border-warm": "#DDD3C4", "status-anomaly": "#DC2626", "surface-container-low": "#fff1eb", "status-anomaly-bg": "#FEE2E2", "inverse-primary": "#aad1a6", "border-subtle": "#E2E8F0", "primary-fixed": "#c5edc1", "secondary-fixed-dim": "#c5caa1", "on-secondary-container": "#626745", "surface-container": "#ffeae0", "on-secondary": "#ffffff", "tertiary-container": "#4c321a", "surface-dim": "#f1d4c7", "surface-container-highest": "#fadccf" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-desktop": "2rem", "space-xs": "0.25rem", "space-xl": "2rem", "gutter": "1rem", "margin": "1.5rem", "space-2xl": "3rem" }, "fontFamily": { "body-md": [ "Inter" ], "display-md": [ "Inter" ], "headline-lg": [ "Inter" ], "tabular-kpi": [ "JetBrains Mono" ], "label-md": [ "Inter" ], "tabular-data": [ "JetBrains Mono" ], "label-xs": [ "Inter" ], "body-sm": [ "Inter" ], "body-lg": [ "Inter" ], "headline-sm": [ "Inter" ], "display-lg": [ "Inter" ] }, "fontSize": { "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "display-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "tabular-kpi": [ "26px", { "lineHeight": "32px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "tabular-data": [ "13px", { "lineHeight": "18px", "fontWeight": "500" } ], "label-xs": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "display-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-60 bg-[#EDE1D2] z-50 flex flex-col justify-between text-on-surface shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col"><div class="px-space-md pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm mb-space-xs"><img alt="NusaMine Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5U9AsJu4tGga9Xj0Rvzh8FXwvZzmTCtxLH0olW2sU3lPtRnuyKGxcwu3knvgaFmk0CfgTvvcqC_n4uJuYameAQjiN-69Jz_3yFMFtYR00NKlsEjZ8WIAs66Sym0ydcRtgLNUd1sDI8TxYZK8Jv58QQmdwPHE2BDmMrqJMM2rE06K2wn_2DNEND5E5YSht6bzj7jJ_UqIU82MC27FK_qjxOaCiNG6p__ZpnsoxtH66IPtA0AxKVKHPCQ"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">NusaMine</span><span class="font-label-xs text-label-xs text-secondary font-semibold uppercase tracking-wider">Governance AI</span></div></div><div class="mt-space-sm inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface text-secondary font-label-xs text-label-xs shadow-sm"><span class="w-1.5 h-1.5 rounded-full bg-status-verified"></span>Pilot Batu Bara: Kaltim &amp; Kalsel</div></div><nav class="flex flex-col gap-1 px-space-sm mt-space-sm" data-active-classes="bg-white text-[#1E3F20] font-semibold border border-[#6A6F4C]/20 shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface/70 hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="ringkasan" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">dashboard</span><span class="">Ringkasan</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg bg-white text-[#1E3F20] font-semibold border border-[#6A6F4C]/20 shadow-sm transition-colors font-body-sm text-body-sm" data-path="pemeriksaan-risiko" href="#"><span class="material-symbols-outlined text-[18px] text-[#1E3F20]">shield_with_heart</span><span class="">Pemeriksaan Risiko</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface/70 hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="validasi-data" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">compare_arrows</span><span class="">Validasi Data</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface/70 hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="bukti-dan-audit-trail" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">history_edu</span><span class="">Bukti &amp; Audit Trail</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface/70 hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="sanggahan" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">gavel</span><span class="">Sanggahan</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface/70 hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="inspeksi-lapangan" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">pin_drop</span><span class="">Inspeksi Lapangan</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface/70 hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="transparansi-publik" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">public</span><span class="">Transparansi Publik</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface/70 hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="nusawatch" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">satellite_alt</span><span class="">NusaWatch</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface/70 hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">settings</span><span class="">Pengaturan</span></a></nav></div><div class="px-space-md pb-space-lg flex flex-col gap-space-sm"><div class="bg-surface/70 rounded-lg p-space-sm flex flex-col gap-1 shadow-sm"><div class="flex items-center justify-between font-label-xs text-label-xs"><span class="text-on-surface font-semibold">SIMBARA Engine</span><span class="inline-flex items-center gap-1 text-primary-container font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-status-verified animate-pulse"></span>Terhubung</span></div><div class="text-[10px] text-on-surface-variant font-mono">Protokol v2.4.1 • Sandi SHA-256</div></div><div class="text-[11px] text-on-surface-variant text-center font-label-xs">ESDM • Kemendag • Kemenkeu</div></div></aside><div class="pl-60"><header class="fixed top-0 left-60 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant"><div class="flex items-center gap-2"><img alt="NusaMine Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5U9AsJu4tGga9Xj0Rvzh8FXwvZzmTCtxLH0olW2sU3lPtRnuyKGxcwu3knvgaFmk0CfgTvvcqC_n4uJuYameAQjiN-69Jz_3yFMFtYR00NKlsEjZ8WIAs66Sym0ydcRtgLNUd1sDI8TxYZK8Jv58QQmdwPHE2BDmMrqJMM2rE06K2wn_2DNEND5E5YSht6bzj7jJ_UqIU82MC27FK_qjxOaCiNG6p__ZpnsoxtH66IPtA0AxKVKHPCQ"><span class="text-on-surface font-bold">NusaMine</span></div><span class="text-outline-variant font-normal">/</span><span class="text-on-surface font-semibold">Ringkasan Tata Kelola</span></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg text-on-surface font-label-xs text-label-xs"><select class="bg-transparent text-on-surface font-label-xs focus:outline-none cursor-pointer py-0.5"><option>Semua Wilayah</option><option>Kalimantan Timur</option><option>Sumatera Selatan</option><option>Kalimantan Selatan</option></select><span class="text-outline-variant">|</span><select class="bg-transparent text-on-surface font-label-xs focus:outline-none cursor-pointer py-0.5"><option>Batu Bara (Pilot)</option><option>Nikel (Fase 2)</option></select><span class="text-outline-variant">|</span><span class="text-on-surface-variant">30 Hari Terakhir</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-low p-0.5 rounded-lg text-label-xs font-label-xs"><button class="px-2 py-1 rounded bg-surface text-on-surface font-semibold shadow-sm" type="button">Pemerintah &amp; Auditor</button><button class="px-2 py-1 text-on-surface-variant hover:text-on-surface transition-colors" type="button">Perusahaan</button><button class="px-2 py-1 text-on-surface-variant hover:text-on-surface transition-colors" type="button">Publik</button><button class="px-2 py-1 text-on-surface-variant hover:text-on-surface transition-colors" type="button">NusaWatch</button></div><button class="relative p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-status-anomaly"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU5KUdjbCGLYDN2TDGFCHSO28Vv6lKeuo1sxq49zSVQfrvyRm7tVGySEcoTlEmCDJg2sUei2j6nAF3n0jslzDdrPmJWeyconQqp6eGJLsSN4NPvVi-stGkUlo8O-rcNQZFDWVKeTB2YIC3gpZdNBnK_HEINgbbKDpN6FQ0xcUyQhre-vTs2l7hmdTAUUjFY2hrK6v1u7EfiZRjU_IVp9QkmR2XSQEGkmiZ3CiKlgSt"><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Bambang S., S.T., M.Si.</span><span class="font-label-xs text-label-xs text-on-surface-variant leading-tight">Auditor Ditjen Minerba</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- BREADCRUMB & METADATA LEDGER -->
+<section class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-md mb-space-md">
+<div class="flex items-center flex-wrap gap-2 font-label-md text-label-md text-on-surface-variant">
+<a class="inline-flex items-center gap-1.5 px-2 py-1 rounded hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span class="">Kembali ke Antrean Triase</span>
+</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant">Pemeriksaan Risiko</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant">Antrean Triase</span>
+<span class="text-outline-variant">/</span>
+<span class="font-tabular-data text-tabular-data text-on-surface font-semibold bg-surface-container-low px-2 py-0.5 rounded">NM-2025-0891</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-xs text-label-xs bg-status-verified-bg text-status-verified px-3 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+<span class="font-semibold tracking-wide">Ledger SHA-256 Terverifikasi</span>
+<span class="text-status-verified/60 font-mono">#b7e4...98a2</span>
+<span class="w-1.5 h-1.5 rounded-full bg-status-verified"></span>
+<span class="text-status-neutral font-medium">Blok #412.981</span>
+</div>
+</section>
+<!-- KARTU INFORMASI UTAMA & STATUS KASUS -->
+<section class="bg-surface rounded-xl shadow-md p-space-lg mb-space-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-accent-butter/20 via-surface-container-low/10 to-transparent pointer-events-none rounded-bl-full"></div>
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-lg relative z-10">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-xs text-label-xs font-semibold">
+            Batu Bara (Thermal Coal)
+          </span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-xs text-label-xs">
+            IUP-OP: 540/109/IUP-OP/2019
+          </span>
+<span class="px-2.5 py-1 rounded bg-status-review-bg text-status-review font-label-xs text-label-xs font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-review animate-ping"></span>
+            Data demonstrasi
+          </span>
+</div>
+<h1 class="font-display-md text-display-md text-on-surface font-bold tracking-tight mt-1">Kasus NM-2025-0891 - PT Mahakam Bara Energi</h1>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-4 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="">Kutai Kartanegara, Kalimantan Timur (Pelabuhan Samarinda - Muara Berau)</span>
+</div>
+<div class="text-outline-variant">•</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">badge</span>
+<span class="">Reviewer Penugasan: <strong class="text-on-surface font-semibold">Bambang S., S.T., M.Si.</strong> (Ditjen Minerba)</span>
+</div>
+</div>
+</div>
+<!-- STATUS & RESIKO BADGES -->
+<div class="flex flex-row lg:flex-col items-end justify-between lg:justify-start gap-space-sm shrink-0">
+<div class="bg-status-review-bg p-space-sm rounded-lg flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-status-review text-[28px]">pending_actions</span>
+<div class="flex flex-col text-right">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase tracking-wider font-semibold">Status Tahapan</span>
+<span class="font-label-md text-label-md text-status-review font-bold">Sanggahan Masuk (Menunggu Verifikasi)</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">Batas Telaah: 11 Hari Kerja Tersisa</span>
+</div>
+</div>
+<div class="bg-status-anomaly-bg/70 px-3 py-2 rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-status-anomaly text-[24px]">flag</span>
+<div class="flex flex-col text-right">
+<div class="flex items-center gap-1 justify-end">
+<span class="font-label-xs text-label-xs font-semibold text-status-anomaly uppercase">Risiko Tinggi</span>
+<span class="font-tabular-kpi text-tabular-kpi text-status-anomaly leading-none">88<span class="text-body-sm font-normal text-on-surface-variant">/100</span></span>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant">Pemicu Verifikasi Manusia (Bukan Vonis Hukum)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- PERSISTENT NOTICE BANNER: ASAS PRADUGA & HUMAN IN THE LOOP -->
+<div class="mt-space-md bg-bg-surface-subtle/70 rounded-lg p-space-md flex items-start gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5 shrink-0">info</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md font-bold tracking-tight">Prinsip Objektivitas Verifikasi Tata Kelola Publik</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Skor risiko adalah pemicu pemeriksaan manusia, bukan bukti pelanggaran atau vonis hukum. Penilaian administratif harus berlandaskan asas praduga tak bersalah, pembuktian materiil silang sistem, dan hak sanggahan pelaku usaha.
+        </p>
+</div>
+</div>
+</section>
+<!-- MENGAPA DITANDAI? (ANALISIS INKONSISTENSI DATA & SIDE-BY-SIDE) -->
+<section class="mb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2 font-label-xs text-label-xs text-secondary uppercase tracking-widest font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="">Analisis Otomatis SIMBARA Engine</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">
+          Mengapa Kasus Ini Ditandai? (Inkonsistensi Lintas Sumber)
+        </h2>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant bg-surface-container-low px-2.5 py-1 rounded">
+        Algoritma Rekonsiliasi Deviasi Metrologis v3.2
+      </span>
+</div>
+<!-- KETERANGAN MODEL BAHASA SEDERHANA -->
+<div class="bg-surface rounded-xl p-space-md shadow-sm">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+        Algoritma deteksi deviasi mendeteksi selisih volume pengapalan antara <strong>deklarasi rencana pengapalan di SIMBARA/MOMS</strong> dengan <strong>laporan muat manifes keberangkatan di Inaportnet KSOP Samarinda</strong> sebesar <strong class="text-status-anomaly font-semibold">+12.450 MT (+12,41%)</strong>, melampaui ambang batas toleransi metrologi teknis (maksimum ±3,0%). Diperlukan tinjauan verifikator manusia terhadap kesesuaian draft survey, log pemindahan, dan dokumen timbangan jetty.
+      </p>
+</div>
+<!-- PANEL KOMPARASI BERDAMPINGAN (SIDE-BY-SIDE) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-stretch">
+<!-- SUMBER A: SIMBARA & MOMS -->
+<div class="lg:col-span-5 bg-surface rounded-xl shadow-sm p-space-md flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low -mx-space-md -mt-space-md p-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">database</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Sumber Data A: SIMBARA &amp; MOMS ESDM</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">Deklarasi Rencana Muat RKAB / RKAP</span>
+</div>
+</div>
+<span class="bg-status-verified-bg text-status-verified px-2 py-0.5 rounded font-label-xs text-label-xs font-semibold">
+            Tanda Tangan Valid
+          </span>
+</div>
+<div class="flex flex-col gap-space-sm py-space-xs font-body-sm text-body-sm">
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">Nomor Referensi Transaksi:</span>
+<span class="font-tabular-data text-tabular-data font-semibold text-on-surface">#SB-SIMBARA-8921-25</span>
+</div>
+<div class="flex justify-between items-center py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="text-on-surface-variant font-medium">Volume Deklarasi Terdaftar:</span>
+<span class="font-tabular-kpi text-tabular-kpi text-primary font-bold">100.200 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">MT</span></span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">Stempel Waktu SIMBARA:</span>
+<span class="font-tabular-data text-tabular-data text-on-surface">19 Feb 2025, 08:30 WITA</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">Surveyor Lapangan Terdaftar:</span>
+<span class="font-semibold text-on-surface">PT Sucofindo Samarinda</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">Armada Tongkang Terjadwal:</span>
+<span class="text-on-surface font-medium">BG. Financia 301 / TB. Samudera Perkasa</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">Integritas Sandi:</span>
+<span class="font-mono text-label-xs text-status-verified bg-status-verified-bg px-2 py-0.5 rounded">SHA256: 9b2d...f41a</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs bg-bg-canvas p-space-sm rounded font-label-xs text-label-xs text-on-surface-variant">
+          Divalidasi melalui integrasi API Pusdatin ESDM pada 19 Feb 2025 08:30:14 WITA.
+        </div>
+</div>
+<!-- SUMBER TENGAH: DEVIASI / DISCREPANCY CALLOUT -->
+<div class="lg:col-span-2 bg-bg-surface-subtle rounded-xl shadow-sm p-space-md flex flex-col justify-center items-center text-center relative">
+<div class="w-10 h-10 rounded-full bg-status-review-bg text-status-review flex items-center justify-center mb-space-xs shadow-sm">
+<span class="material-symbols-outlined text-[24px]">compare_arrows</span>
+</div>
+<span class="font-label-xs text-label-xs font-semibold text-on-surface uppercase tracking-wider">Deviasi Terhitung</span>
+<div class="my-space-sm">
+<span class="font-tabular-kpi text-tabular-kpi text-status-anomaly font-bold block">
+            +12.450 MT
+          </span>
+<span class="inline-block bg-status-anomaly-bg text-status-anomaly font-tabular-data text-tabular-data font-bold px-2 py-0.5 rounded-full mt-1">
+            +12,41% Deviasi
+          </span>
+</div>
+<div class="flex flex-col gap-1 w-full text-left font-label-xs text-label-xs text-on-surface-variant pt-space-sm bg-surface/70 p-2 rounded">
+<div class="flex justify-between">
+<span class="">Batas Toleransi:</span>
+<span class="font-tabular-data font-semibold text-on-surface">±3,0% (3.000 MT)</span>
+</div>
+<div class="flex justify-between text-status-anomaly font-medium">
+<span class="">Deviasi Ekstra:</span>
+<span class="font-tabular-data font-semibold">+9.450 MT</span>
+</div>
+</div>
+<span class="mt-space-sm font-label-xs text-label-xs text-status-review font-semibold bg-status-review-bg px-2 py-1 rounded">
+          Perlu Klarifikasi Metrologi
+        </span>
+</div>
+<!-- SUMBER B: INAPORTNET & CEISA -->
+<div class="lg:col-span-5 bg-surface rounded-xl shadow-sm p-space-md flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low -mx-space-md -mt-space-md p-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-accent-palmoil">directions_boat</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Sumber Data B: Inaportnet &amp; CEISA</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">Laporan Manifes Realisasi Muat Keberangkatan</span>
+</div>
+</div>
+<span class="bg-status-verified-bg text-status-verified px-2 py-0.5 rounded font-label-xs text-label-xs font-semibold">
+            KSOP Terverifikasi
+          </span>
+</div>
+<div class="flex flex-col gap-space-sm py-space-xs font-body-sm text-body-sm">
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">Nomor Referensi KSOP / Bea Cukai:</span>
+<span class="font-tabular-data text-tabular-data font-semibold text-on-surface">#IN-4402-SMD / CEISA-EXP-2025-091</span>
+</div>
+<div class="flex justify-between items-center py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="text-on-surface-variant font-medium">Volume Manifes Realisasi:</span>
+<span class="font-tabular-kpi text-tabular-kpi text-status-anomaly font-bold">112.650 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">MT</span></span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">Stempel Waktu Pelabuhan:</span>
+<span class="font-tabular-data text-tabular-data text-on-surface">20 Feb 2025, 14:15 WITA</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">Otoritas Pelabuhan Penerbit:</span>
+<span class="font-semibold text-on-surface">KSOP Kelas II Samarinda</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">Draft Survey Report:</span>
+<span class="text-on-surface font-medium">PT Surveyor Indonesia (Mitra Inaportnet)</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="text-on-surface-variant">Armada Tambahan Tercatat:</span>
+<span class="font-medium text-status-review">+ BG. Samudera 12 (Tongkang Pengalih)</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs bg-bg-canvas p-space-sm rounded font-label-xs text-label-xs text-on-surface-variant">
+          Sinkronisasi gateway KSOP Samarinda via Pusat Integrasi Logistik Nasional (20 Feb 14:20 WITA).
+        </div>
+</div>
+</div>
+<!-- PARAMETER KONTRIBUTOR SKOR (CHART & BREAKDOWN) -->
+<div class="bg-surface rounded-xl shadow-sm p-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-sm">
+        Rincian Parameter Pembobot Risiko (Total Skor: 88/100)
+      </h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm font-semibold text-on-surface">1. Konsistensi Volume Muat</span>
+<span class="font-tabular-data text-tabular-data font-bold text-status-anomaly">Bobot 50%</span>
+</div>
+<div class="w-full bg-surface rounded-full h-2 my-1 overflow-hidden">
+<div class="bg-status-anomaly h-2 rounded-full" style="width: 95%;"></div>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant">Deviasi 12,4% melampaui ambang batas 3% (Skor Sektor: 47,5/50).</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm font-semibold text-on-surface">2. Sinkronisasi Stempel Waktu</span>
+<span class="font-tabular-data text-tabular-data font-bold text-status-review">Bobot 30%</span>
+</div>
+<div class="w-full bg-surface rounded-full h-2 my-1 overflow-hidden">
+<div class="bg-status-review h-2 rounded-full" style="width: 80%;"></div>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant">Selisih waktu 29 jam 45 menit antara izin dan draft survey akhir (Skor: 24,0/30).</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm font-semibold text-on-surface">3. Rekam Kepatuhan Historis</span>
+<span class="font-tabular-data text-tabular-data font-bold text-status-verified">Bobot 20%</span>
+</div>
+<div class="w-full bg-surface rounded-full h-2 my-1 overflow-hidden">
+<div class="bg-status-verified h-2 rounded-full" style="width: 82%;"></div>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant">Kepatuhan 94% pada 12 pengapalan sebelumnya (Skor Risiko: 16,5/20).</span>
+</div>
+</div>
+</div>
+</section>
+<!-- BUKTI PENDUKUNG & AUDIT TRAIL IMMUTABLE (PROVENANCE) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- DOKUMEN BUKTI & SANGGAHAN PELAKU USAHA (7 Kolom) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+          Daftar Berkas Bukti &amp; Sanggahan
+        </h2>
+<span class="font-label-xs text-label-xs text-secondary-fixed-dim bg-primary-container px-2.5 py-1 rounded font-medium">
+          3 Berkas Terenkripsi
+        </span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- BUKTI A -->
+<div class="bg-surface rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex items-start gap-space-md">
+<div class="p-space-sm bg-status-verified-bg text-status-verified rounded-lg shrink-0">
+<span class="material-symbols-outlined text-[28px]">description</span>
+</div>
+<div class="flex flex-col gap-1 w-full">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-xs text-label-xs font-semibold text-status-verified uppercase">Bukti A: Dokumen Resmi Pelabuhan</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Surat Persetujuan Berlayar (SPB) &amp; Manifes KSOP</h4>
+</div>
+<span class="font-label-xs text-label-xs bg-surface-container-low px-2 py-0.5 rounded text-on-surface font-mono">PDF • 4.2 MB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Dokumen verifikasi resmi keberangkatan kapal KSOP Samarinda No: SPB.SMD/2025/II/1029. Memuat pengesahan tonase 112.650 MT.
+            </p>
+<div class="flex items-center justify-between pt-space-xs font-label-xs text-label-xs text-on-surface-variant">
+<span class="font-mono text-outline">SHA256: 8a4c0...f291e</span>
+<a class="text-secondary font-semibold hover:underline inline-flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+                Pratinjau Berkas
+              </a>
+</div>
+</div>
+</div>
+<!-- BUKTI B -->
+<div class="bg-surface rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex items-start gap-space-md">
+<div class="p-space-sm bg-surface-container-low text-secondary rounded-lg shrink-0">
+<span class="material-symbols-outlined text-[28px]">scale</span>
+</div>
+<div class="flex flex-col gap-1 w-full">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-xs text-label-xs font-semibold text-secondary uppercase">Bukti B: Telemetri Timbangan</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Certificate of Weight (CoW) Sensor Jetty</h4>
+</div>
+<span class="font-label-xs text-label-xs bg-surface-container-low px-2 py-0.5 rounded text-on-surface font-mono">RAW CSV/JSON • 18 MB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Log sensor continuous belt conveyor weigher di Jetty Mahakam Barat. Timbangan mencatat total akumulasi 100.180 MT saat pemuatan awal.
+            </p>
+<div class="flex items-center justify-between pt-space-xs font-label-xs text-label-xs text-on-surface-variant">
+<span class="font-mono text-outline">SHA256: 3c27e...bc884</span>
+<a class="text-secondary font-semibold hover:underline inline-flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">analytics</span>
+                Inspeksi Telemetri
+              </a>
+</div>
+</div>
+</div>
+<!-- BUKTI C: SANGGAHAN PELAKU USAHA -->
+<div class="bg-surface rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex items-start gap-space-md relative overflow-hidden">
+<div class="p-space-sm bg-status-review-bg text-status-review rounded-lg shrink-0">
+<span class="material-symbols-outlined text-[28px]">gavel</span>
+</div>
+<div class="flex flex-col gap-1 w-full">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-xs text-label-xs font-semibold text-status-review uppercase">Bukti C: Berkas Sanggahan Perusahaan</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">B.A. Rekonsiliasi Pengalihan Muatan (Air Surut)</h4>
+</div>
+<span class="font-label-xs text-label-xs bg-status-review-bg text-status-review px-2 py-0.5 rounded font-bold font-mono">DILAMPIRKAN</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Perusahaan menyatakan terjadi kondisi dangkal/air surut di alur Sungai Mahakam yang memaksa penggabungan sisa muatan 12.450 MT dari tongkang sekunder (BG. Samudera 12) ke BG. Financia 301 di titik Muara Berau Anchorage. Disertai sertifikat surveyor Carsurin No. CS-SMD-8812.
+            </p>
+<div class="flex items-center justify-between pt-space-xs font-label-xs text-label-xs text-on-surface-variant">
+<span class="font-mono text-outline">SHA256: e871a...9923d</span>
+<a class="text-secondary font-semibold hover:underline inline-flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">file_download</span>
+                Unduh Dokumen Sanggahan
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PROVENANCE LOG / JEJAK AUDIT PERMANEN (5 Kolom) -->
+<div class="lg:col-span-5 bg-surface rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low -mx-space-md -mt-space-md p-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">history_edu</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Jejak Audit Provenance (Immutable Log)</span>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant">WITA (UTC+8)</span>
+</div>
+<!-- TIMELINE VERTICAL -->
+<div class="relative pl-6 flex flex-col gap-space-md my-space-sm">
+<div class="absolute left-2.5 top-2 bottom-2 w-0.5 bg-border-warm"></div>
+<!-- EVENT 1 -->
+<div class="relative flex flex-col gap-0.5">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-status-verified shadow-sm"></span>
+<span class="font-label-xs text-label-xs font-mono text-on-surface-variant">19 Feb 2025 • 08:30 WITA</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Pengajuan RKAB SIMBARA Diterbitkan</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Diterbitkan oleh PT Mahakam Bara Energi (Akun Terverifikasi Direksi).</p>
+</div>
+<!-- EVENT 2 -->
+<div class="relative flex flex-col gap-0.5">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-status-neutral shadow-sm"></span>
+<span class="font-label-xs text-label-xs font-mono text-on-surface-variant">20 Feb 2025 • 14:15 WITA</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Manifes Pelabuhan Diunggah</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">KSOP Kelas II Samarinda memasukkan data SPB ke sistem Inaportnet.</p>
+</div>
+<!-- EVENT 3 -->
+<div class="relative flex flex-col gap-0.5">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-status-anomaly shadow-sm"></span>
+<span class="font-label-xs text-label-xs font-mono text-on-surface-variant">20 Feb 2025 • 16:00 WITA</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">AI Engine Menetapkan Flag Triase</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Terdeteksi anomali volume selisih +12,4%. Status: Antrean Triase Verifikasi.</p>
+</div>
+<!-- EVENT 4 -->
+<div class="relative flex flex-col gap-0.5">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-secondary shadow-sm"></span>
+<span class="font-label-xs text-label-xs font-mono text-on-surface-variant">21 Feb 2025 • 09:00 WITA</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Notifikasi Hak Jawab Terkirim</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Portal kepatuhan PT Mahakam Bara Energi menerima panggilan klarifikasi 14 hari.</p>
+</div>
+<!-- EVENT 5 -->
+<div class="relative flex flex-col gap-0.5">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-status-review shadow-sm"></span>
+<span class="font-label-xs text-label-xs font-mono text-on-surface-variant">22 Feb 2025 • 11:30 WITA</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Perusahaan Mengunggah Dokumen Sanggahan</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Unggahan Berita Acara Rekonsiliasi &amp; CoA Carsurin bertanda tangan elektronik.</p>
+</div>
+<!-- EVENT 6 (CURRENT) -->
+<div class="relative flex flex-col gap-0.5">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-primary-container shadow-sm ring-4 ring-primary-container/20"></span>
+<span class="font-label-xs text-label-xs font-mono text-on-surface-variant">23 Feb 2025 • 08:00 WITA</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dialokasikan ke Auditor Penelaah</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kasus aktif ditangani oleh Bambang S., S.T., M.Si. (Ditjen Minerba).</p>
+</div>
+</div>
+</div>
+<div class="bg-bg-canvas p-space-sm rounded-lg mt-space-sm flex items-center justify-between text-on-surface-variant font-label-xs text-label-xs">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-status-verified">lock</span>
+<span class="">Ledger Bersandi: Merkle Tree Valid</span>
+</span>
+<span class="font-mono">Sync: 23 Feb 2025 08:01:12</span>
+</div>
+</div>
+</section>
+<!-- PANEL AKSI AUDITOR / HUMAN IN THE LOOP WORKSTATION -->
+<section class="bg-surface rounded-xl shadow-lg p-space-lg mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-md mb-space-md bg-surface-container-low -mx-space-lg -mt-space-lg p-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">assignment_turned_in</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+            Panel Keputusan Verifikator Manusia (Human Decision Station)
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Pilih tindakan pemeriksaan materiil berdasarkan analisis bukti dan regulasi Ditjen Minerba.
+          </p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase">Otoritas Penilai</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">Auditor Madya Minerba (Kemen ESDM)</span>
+</div>
+</div>
+<!-- OPSI TINDAKAN RESMI -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md mb-space-lg" id="action-options">
+<!-- Opsi 1 -->
+<label class="cursor-pointer p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-sm relative">
+<input class="mt-1 text-primary focus:ring-0" name="audit_action" type="radio" value="rekomposisi">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rekomposisi Tim Penelaah</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Delegasikan telaah metrologi draft survey ke surveyor terakreditasi atau ahli pelabuhan.
+          </p>
+</div>
+</label>
+<!-- Opsi 2 -->
+<label class="cursor-pointer p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-sm relative">
+<input checked="" class="mt-1 text-primary focus:ring-0" name="audit_action" type="radio" value="klarifikasi">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Minta Klarifikasi Tambahan</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Kirim surat klarifikasi resmi ke KSOP Samarinda &amp; Carsurin untuk validasi tongkang sekunder (Batas: 7 hari kerja).
+          </p>
+</div>
+</label>
+<!-- Opsi 3 -->
+<label class="cursor-pointer p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-sm relative">
+<input class="mt-1 text-primary focus:ring-0" name="audit_action" type="radio" value="inspeksi">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Jadwalkan Inspeksi Lapangan</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Terbitkan Surat Tugas inspeksi fisik ke Jetty Muatan Samarinda dan titik timbang kalibrasi conveyor.
+          </p>
+</div>
+</label>
+<!-- Opsi 4 -->
+<label class="cursor-pointer p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-sm relative">
+<input class="mt-1 text-primary focus:ring-0" name="audit_action" type="radio" value="terima">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Selesaikan Flag (Terima Sanggahan)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Sanggahan pengalihan muatan air surut dinilai wajar dan absah. Tutup flag tanpa catatan pelanggaran.
+          </p>
+</div>
+</label>
+<!-- Opsi 5 -->
+<label class="cursor-pointer p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-space-sm relative md:col-span-2 lg:col-span-2">
+<input class="mt-1 text-primary focus:ring-0" name="audit_action" type="radio" value="eskalasi">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Eskalasi ke Panel Gabungan Antar-Lembaga</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Rujuk kasus ke forum evaluasi gabungan Ditjen Minerba, Ditjen Bea &amp; Cukai, dan Ditjen Hubla untuk investigasi metrologis terpadu.
+          </p>
+</div>
+</label>
+</div>
+<!-- FORM RATIONALE WAJIB & PERNYATAAN KEPATUHAN -->
+<div class="flex flex-col gap-space-md bg-bg-canvas p-space-md rounded-xl">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md font-bold text-on-surface flex items-center justify-between" for="auditor-rationale">
+<span class="">Catatan Pertimbangan Hukum &amp; Rationale Auditor <span class="text-status-anomaly">*Wajib Diisi</span></span>
+<span class="font-label-xs text-label-xs text-on-surface-variant font-normal">Minimal 50 karakter</span>
+</label>
+<textarea class="w-full bg-surface rounded-lg p-space-sm font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-outline-variant" id="auditor-rationale" placeholder="Tuliskan pertimbangan teknis, rujukan regulasi (misal Kepmen ESDM / Permenhub), dan analisis atas keabsahan Berita Acara Rekonsiliasi sebelum mengambil keputusan..." rows="4"></textarea>
+</div>
+<div class="flex items-start gap-space-sm">
+<input class="mt-1 text-primary rounded focus:ring-0 cursor-pointer" id="compliance-check" type="checkbox">
+<label class="font-body-sm text-body-sm text-on-surface cursor-pointer leading-relaxed" for="compliance-check">
+          Saya menyatakan dengan sesungguhnya bahwa keputusan ini diambil berdasarkan verifikasi pembuktian materiil secara objektif, bebas dari benturan kepentingan, serta akan dicatat secara permanen dan tidak dapat diubah di dalam Ledger Audit NusaMine.
+        </label>
+</div>
+<!-- PERINGATAN REGULASI & TATA KELOLA PUBLIK -->
+<div class="bg-status-review-bg/60 p-space-sm rounded-lg flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-status-review text-[20px] shrink-0">gavel</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant leading-tight">
+<strong>Peringatan Regulasi:</strong> NusaMine tidak menyediakan tombol sanksi otomatis, penangguhan izin sepihak, atau pemblokiran ekspor instan. Seluruh tindak lanjut administratif mengacu pada UU Minerba dan prosedur adjudikasi resmi Ditjen Minerba.
+        </span>
+</div>
+<!-- ACTION BUTTONS -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-2 font-label-xs text-label-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-status-verified">enhanced_encryption</span>
+<span class="">Kriptografi Digital Signature Ditjen Minerba siap disematkan</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-colors" type="button">
+            Simpan Konsep (Draft)
+          </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md font-bold shadow-md transition-all flex items-center gap-2 cursor-pointer" id="btn-submit-action" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="">Konfirmasi &amp; Catat Putusan Auditor</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER METADATA SISTEM & REKONSILIASI SIMBARA -->
+<footer class="flex flex-col md:flex-row items-center justify-between gap-space-sm py-space-md text-on-surface-variant font-label-xs text-label-xs">
+<div class="flex items-center gap-space-xs">
+<span class="">NusaMine Governance Layer</span>
+<span class="text-outline-variant">•</span>
+<span class="">Engine Versi 2.4.1 (Produksi Pilot Kaltim-Kalsel)</span>
+<span class="text-outline-variant">•</span>
+<span class="">Protokol Keamanan SHA-256</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="text-status-verified font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-verified"></span>
+        SIMBARA API Connected
+      </span>
+<span class="text-outline-variant">•</span>
+<span class="">Ditjen Minerba • Kemendag • Kemenkeu</span>
+</div>
+</footer>
+</div>
+<script>
+  (function() {
+    const submitBtn = document.getElementById('btn-submit-action');
+    const rationaleInput = document.getElementById('auditor-rationale');
+    const complianceCheck = document.getElementById('compliance-check');
+
+    if (submitBtn) {
+      submitBtn.addEventListener('click', function() {
+        const text = rationaleInput ? rationaleInput.value.trim() : '';
+        const isChecked = complianceCheck ? complianceCheck.checked : false;
+
+        if (!text || text.length < 20) {
+          alert('Mohon lengkapi Catatan Pertimbangan Hukum & Rationale Auditor (minimal 20 karakter) sebelum mengonfirmasi putusan.');
+          if (rationaleInput) rationaleInput.focus();
+          return;
+        }
+
+        if (!isChecked) {
+          alert('Anda wajib menyetujui pernyataan integritas dan kepatuhan bebas benturan kepentingan.');
+          if (complianceCheck) complianceCheck.focus();
+          return;
+        }
+
+        const selectedAction = document.querySelector('input[name="audit_action"]:checked')?.value || 'klarifikasi';
+        const actionLabels = {
+          'rekomposisi': 'Rekomposisi Tim Penelaah',
+          'klarifikasi': 'Permintaan Klarifikasi Tambahan',
+          'inspeksi': 'Jadwal Inspeksi Lapangan',
+          'terima': 'Penyelesaian Flag (Penerimaan Sanggahan)',
+          'eskalasi': 'Eskalasi ke Panel Gabungan Antar-Lembaga'
+        };
+
+        alert('Putusan berhasil dicatat secara resmi:\n\nTindakan: ' + (actionLabels[selectedAction] || selectedAction) + '\nStatus Ledger: SHA-256 Diterbitkan\nReviewer: Bambang S., S.T., M.Si.\n\nCatatan telah tersimpan ke dalam Jejak Audit NusaMine.');
+      });
+    }
+  })();
+</script></main></div>
+
+
+
+
+
+
+
+</body></html>

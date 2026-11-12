@@ -1,0 +1,6 @@
+{
+  "name": "NusaMine - AI Governance & Evidence Review Dashboard",
+  "description": "Sistem Tata Kelola NusaMine: AI-Assisted Mining Governance and Evidence Review Layer untuk memperkuat integritas SIMBARA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
